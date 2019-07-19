@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/homeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_nav_view"/>
+
+    <com.sdsmdg.harjot.vectormaster.VectorMasterView
+        android:id="@+id/heart_vector"
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottom_nav_view"
+        android:layout_height="12dp"
+        app:vector_src="@drawable/moon_curve_progress" />
+
+    <View
+        android:id="@+id/bottomCurve"
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:background="@drawable/moon_curve"
+        android:clipChildren="false"
+        android:elevation="2dp"
+        android:layout_above="@id/bottom_nav_view"/>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        app:elevation="0dp"
+        app:itemBackground="@null"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="false"
+        app:itemIconTint="@color/icon_color"
+        app:itemTextColor="@color/icon_color"
+        app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>
