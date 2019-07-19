@@ -11,6 +11,8 @@ To make your Vector Drawable dynamic you can use this cool library
 
 [VectorMaster] (https://github.com/harjot-oberai/VectorMaster)
 
-![Our Implementation](app/blob/custom.gif)  ![Furlenco](app/blob/furlenco.gif)
+My Implementation         |  Furlenco
+:-------------------------:|:-------------------------:
+![Our Implementation](app/blob/custom.gif)  |  ![Furlenco](app/blob/furlenco.gif)
 
 If you like this design you clone it and use it as per your design  
